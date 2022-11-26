@@ -361,3 +361,17 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Exercise2/Setup/Exercise2.application
+/Exercise2/Setup/setup.exe
+/Exercise2/Setup/Application Files/Exercise2_1_0_0_2/System.Threading.Tasks.Extensions.dll.deploy
+/Exercise2/Setup/Application Files/Exercise2_1_0_0_2/System.Runtime.CompilerServices.Unsafe.dll.deploy
+/Exercise2/Setup/Application Files/Exercise2_1_0_0_2/System.Numerics.Vectors.dll.deploy
+/Exercise2/Setup/Application Files/Exercise2_1_0_0_2/System.Memory.dll.deploy
+/Exercise2/Setup/Application Files/Exercise2_1_0_0_2/System.Buffers.dll.deploy
+/Exercise2/Setup/Application Files/Exercise2_1_0_0_2/Microsoft.Bcl.HashCode.dll.deploy
+/Exercise2/Setup/Application Files/Exercise2_1_0_0_2/Microsoft.Bcl.AsyncInterfaces.dll.deploy
+/Exercise2/Setup/Application Files/Exercise2_1_0_0_2/Exercise2.exe.manifest
+/Exercise2/Setup/Application Files/Exercise2_1_0_0_2/Exercise2.exe.deploy
+/Exercise2/Setup/Application Files/Exercise2_1_0_0_2/Exercise2.exe.config.deploy
+/Exercise2/Setup/Application Files/Exercise2_1_0_0_2/Exercise2.application
+/Exercise2/Setup/Application Files/Exercise2_1_0_0_2/CsvHelper.dll.deploy
