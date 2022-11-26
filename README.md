@@ -19,7 +19,7 @@ How to run (Exercise2 Console Application):
   5.Find setup.exe file in the Seup folder, then run.
   ![image](https://user-images.githubusercontent.com/22318538/204082170-63cb1b26-9d63-4a07-ba9e-d06c830d1bc6.png)
 
-  6.Press Install.
+  6.Press Install.                                                    
   ![image](https://user-images.githubusercontent.com/22318538/204082220-661f22e4-7dd3-4766-934a-21cf184ba987.png)
 
   7.When the application is installed, a shortcut will be added to the Start Menu, and the application can be uninstalled via Add/Remove Programs.   
@@ -32,5 +32,8 @@ How to run (Exercise2 Console Application):
   9.Enter the csv file name, for example "order_log00.csv" then press enter.
   ![image](https://user-images.githubusercontent.com/22318538/204082647-e64df947-b01e-4863-a7ae-b4df71db7af5.png)
 
-  10.you will see two new lines (2 files created successfully)
+  10.You will see two new lines (2 files created successfully)
   ![image](https://user-images.githubusercontent.com/22318538/204082698-c3a1418b-621d-41d9-8bdf-3632d0a379da.png)
+
+  11.You will find the new files under "C:\ExerciseCSV" folder.
+  ![image](https://user-images.githubusercontent.com/22318538/204082927-b3b6e954-37f0-4e42-93a3-dd017b09eebd.png)
