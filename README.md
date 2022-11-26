@@ -6,15 +6,24 @@ How to run (Exercise2 Console Application):
   2. Extrart the downloaded file (Exercise2-master.zip)
   ![image](https://user-images.githubusercontent.com/22318538/204076277-a26c91f7-2e01-4999-b607-15ae8ee3fdb9.png)
   
-  3.Move the "ExerciseCSV" folder (contain 2 unit tests) from "Exercise2-master\Exercise2-master\Exercise2" to C:\ root drive.
-  ![image](https://user-images.githubusercontent.com/22318538/204076682-42f5ed9c-0ddb-4ce8-be93-808480806aed.png)
+  3.Move the "ExerciseCSV" folder (contain 2 unit tests) from "Exercise2-master\Exercise2-master\Exercise2" to "C:\" folder.
+ ![image](https://user-images.githubusercontent.com/22318538/204081677-6dcaffab-993c-4926-b1bd-ca5d8570ea73.png)
   Note: - "ExerciseCSV" folder will be used by Exercise2 application to read and creat csv files.    
-        - Two sample files "order_log00.csv" and  "order_log01.csv" are in the folder.
+        - Two sample files "order_log00.csv" and  "order_log01.csv" are in the folder.   
+        
   ![image](https://user-images.githubusercontent.com/22318538/204077126-745d09e0-9d9a-409a-bd76-8b3da6199d74.png)
   
-  4.Find setup file under "C:\\..\\Exercise2-master\Exercise2-master\Exercise2\Setup" , then Run "setup.exe"
-  ![image](https://user-images.githubusercontent.com/22318538/204077754-4526c935-8fe8-4b74-9acb-39e8871feec5.png)
+  4.Find setup file "setup.rar" under "C:\\..\\Exercise2-master\Exercise2-master\Exercise2\Setup" , then extract to "setup" folder
+  ![image](https://user-images.githubusercontent.com/22318538/204081882-d9f7b228-8637-4e87-b0db-cac7f68fb9c8.png)
 
-  5. Press install.     
-  ![image](https://user-images.githubusercontent.com/22318538/204077993-cdfdb40f-50df-4a12-b703-29313e9ec011.png)
+  5.Find setup.exe file in the Seup folder, then run.
+  ![image](https://user-images.githubusercontent.com/22318538/204082170-63cb1b26-9d63-4a07-ba9e-d06c830d1bc6.png)
 
+  6.Press Install.
+  ![image](https://user-images.githubusercontent.com/22318538/204082220-661f22e4-7dd3-4766-934a-21cf184ba987.png)
+
+  7.When the application is installed, a shortcut will be added to the Start Menu, and the application can be uninstalled via Add/Remove Programs.
+  ![image](https://user-images.githubusercontent.com/22318538/204082380-d35ef1e2-4248-48aa-a5fc-398a643a5069.png)
+
+  8.the Exercise2 Console Application as showing below
+  ![image](https://user-images.githubusercontent.com/22318538/204082285-7645e997-af67-4aaf-b62a-8c4a8d1f516a.png)
