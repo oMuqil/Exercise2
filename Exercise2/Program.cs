@@ -85,23 +85,14 @@ namespace Exercise2
 
         static void WriteFirstFile(List<Order> ordList, string fName)
         {
-            List<FirstResult> firstResultList = new List<FirstResult>();
-            List<Order> firstResult = ordList
+            
+            var firstResult = ordList
                             .GroupBy(l => l.PrdName)
-                            .Select(cl => new Order
+                            .Select(cl => new FirstResult
                             {
-                                PrdName = cl.First().PrdName,
-                                PrdQuantity = cl.Sum(c => c.PrdQuantity),
+                                rPrdName = cl.First().PrdName,
+                                AvgQuantity = (float)cl.Sum(c => c.PrdQuantity) / ordList.Count,
                             }).ToList();
-
-            foreach (Order ord in firstResult)
-            {
-                firstResultList.Add(new FirstResult()
-                {
-                    rPrdName = ord.PrdName,
-                    AvgQuantity = (float)ord.PrdQuantity / ordList.Count,
-                });
-            }
 
             var config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
@@ -110,34 +101,26 @@ namespace Exercise2
             using (var writer = new StreamWriter("C:\\ExerciseCSV\\0_" + fName))
             using (var csv = new CsvWriter(writer, config))
             {
-                csv.WriteRecords(firstResultList);
+                csv.WriteRecords(firstResult);
             }
             Console.WriteLine("\n C:\\ExerciseCSV\\0_" + fName + " is created successfully..!");
         }
 
         static void WriteSecondFile(List<Order> ordList, string fName)
         {
-            List<SecondResult> secondResultList = new List<SecondResult>();
-            var mostPopularBrand = "";
-            var groupedResult = from s in ordList
-                                group s by s.PrdName;
-            foreach (var nameGroup in groupedResult)
-            {
-                foreach (Order s in nameGroup) // Each group has inner collection
-                {
-                    mostPopularBrand = "";
-                    mostPopularBrand = nameGroup.GroupBy(x => x.PrdBrand)
+          
+            var secondResultList = ordList
+                            .GroupBy(l => l.PrdName)
+                            .Select(cl => new SecondResult
+                            {
+                                PrdName = cl.First().PrdName,
+                                MostPopularBrand = cl.GroupBy(x => x.PrdBrand)
                                                     .OrderByDescending(x => x.Count())
-                                                    .First().Key;
+                                                    .First().Key,
+                            }).ToList();
+           
 
-                    secondResultList.Add(new SecondResult()
-                    {
-                        PrdName = nameGroup.Key,
-                        MostPopularBrand = mostPopularBrand
-                    });
-                    break;
-                }
-            }
+           
             var config = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
                 HasHeaderRecord = false,
